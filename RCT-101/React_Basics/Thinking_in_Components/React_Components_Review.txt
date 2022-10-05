@@ -1,0 +1,14 @@
+1. A _ renders a reusable piece of the UI.
+- component
+
+2. How do you create a React component?
+- As either a JavaScript function or class
+
+3. Define a component that creates a reusable 'footer'.
+- Footer
+
+4. Use a JSX tag to render a component named Scoreboard into the DOM.
+- <Scoreboard />
+
+5. React uses a templating language for creating components.
+- False. React components are written in plain JavaScript, with the help of JSX.

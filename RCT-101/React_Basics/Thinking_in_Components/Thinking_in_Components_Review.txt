@@ -1,0 +1,14 @@
+1. Complete the code below to create a Navigation component as a function.
+- return
+
+2. Which component do you usually pass to ReactDOM.render()?
+- The top-level component.
+
+3. When should you break a component into smaller components?
+- When the component has too many responsibilities
+
+4. Why is a capital letter necessary in the component name?
+- To differentiate custom components from native DOM elements
+
+5. When a component contains other components, it's called:
+- composition

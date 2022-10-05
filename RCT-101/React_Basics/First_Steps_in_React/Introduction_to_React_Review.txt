@@ -1,0 +1,17 @@
+1. Which of the following best describes React?
+- A JavaScript library for building user interfaces
+
+2. Which library lets React connect to and update the DOM?
+- React DOM
+
+3. Which method creates and returns a React element of the given type?
+- createElement()
+
+4. React creates actual DOM nodes.
+- False. React creates objects that describe DOM nodes.
+
+5. Which method renders React elements to the DOM?
+- ReactDOM.render()
+
+6. React manipulates and updates the DOM directly.
+- False. React only manages what gets rendered to the DOM via ReactDOM.render. It's the job of render() to interpret the element objects and create DOM nodes out of them.

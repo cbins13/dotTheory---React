@@ -1,0 +1,17 @@
+1. Display the value of the petName variable inside the <p> tags.
+- {petName}
+
+2. What is the purpose of curly braces {} in JSX?
+- They are used to evaluate JavaScript expressions
+
+3. Which of the following JSX snippets applies a class of 'container' to the div?
+- <div className="container">...</div>
+
+4. Is using JSX with React optional?
+- Yes
+
+5. Elements written in JSX get transpiled to:
+- React.createElement() functions
+
+6. What tool do we use to translate JSX into standard JavaScript?
+- Babel
