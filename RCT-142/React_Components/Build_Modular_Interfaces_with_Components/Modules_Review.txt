@@ -1,0 +1,17 @@
+1. Use a relative path to import the nav displayed in the footer.
+- Nav, ./Nav
+
+2. Use a named import that imports React and Component from the react package.
+- React, {Component}
+
+3. Complete the code to bring in React as a dependency.
+- import, from
+
+4. Do we need to import React into every module that uses React's API and JSX?
+- Yes. Each module has its own scope
+
+5. Complete the code to export the Application component.
+- export, default
+
+6. To use a global package that's not installed on your computer, you can use _ to download and execute the package you specify, all in one command.
+- npx
