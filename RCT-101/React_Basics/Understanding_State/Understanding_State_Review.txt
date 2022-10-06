@@ -1,0 +1,17 @@
+1. Complete the code to display the value of a prop named time. Note that Clock is a class component.
+- {this.props.time}
+
+2. In React, state is never modified directly.
+- True. The only way React allows you to update state is by using its built-in setState() method.
+
+3. State may be updated asynchrnously. Whenever you need to update based on previous state, you shouldn't rely on _ to calculate the next state.
+- this.state
+
+4. What type of state is available to the entire app?
+- Application state
+
+5. Data from state is distributed through the application via _.
+- props
+
+6. Complete the code so that the isConfirmed state updates its value based on the previous state.
+- prevState
