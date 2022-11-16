@@ -1,0 +1,17 @@
+1. Complete the code to prevent the form's default behavior when the form submits and complete the event call in the <form> tag.
+- preventDefauult, onSubmit
+
+2. In the piece of code below will the new student be added before or after the existing students in prevStudents.
+- Before. The new student gets added to the front of the students array.
+
+3. A controlled component renders a form element whose value is not controlled by React, with state
+- False
+
+4. Complete the code to create a controlled component that renders an <input> field.
+- value, onChange, e.target.value
+
+5. Use a named import that imports React and the useState Hook from the react package.
+- React, {useState}
+
+6. Complete the code to bring in all student objects in the previous state into the students array in setStudents().
+- ...prevState

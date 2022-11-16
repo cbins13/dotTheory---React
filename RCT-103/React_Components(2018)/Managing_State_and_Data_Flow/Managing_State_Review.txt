@@ -1,0 +1,17 @@
+1. Which of the following best describes unidirectional data flow?
+- React flows any data changes at the top down through the component tree updating each component.
+
+2. Can two or more components access and share the same state?
+- Yes. A parrent component can pass state down to its children via props.
+
+3. When two or more components need access to the same state, we hoise the state into their common parent. This is called:
+- lifting state
+
+4. React allows us to use props that are callback functions to communicate data upstream, from a child to a parent.
+- True. That's how a child component can access functions and change state defined in its parent component.
+
+5. Complete the code to create a controlled component that renders an <input> field.
+- e.target.value, this.state.value, onChange
+
+6. Complete the code to bring in all student objects in the previous state into the students array in setState().
+- ...prevState.students

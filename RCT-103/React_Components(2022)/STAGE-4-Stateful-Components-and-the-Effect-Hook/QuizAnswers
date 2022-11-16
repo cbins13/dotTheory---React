@@ -1,0 +1,44 @@
+1. Complete the ternary expression to display the button text based on the value of the isLoggedIn state.
+- ?, :
+
+2. Complete the code to add the method that will clear the interval ID once the component gets removed from the DOM.
+- return
+
+3. In the code snippet below when will React run the console.log statement?
+const Message = () => {
+    const [name, setName] = useState();
+
+    useEffect(() => {
+        console.log("hello " + name);
+    });
+
+    return (...);
+}
+- After the first render and after each render
+
+4. Which of the following are appropriate use cases for the useEffect Hook? (Select all that apply)
+- Directly updating the DOM, Setting up a subscription, Setting up timers, Fetching data
+
+5. In the code snippet below when will React run the console.log statement?
+const Message = () => {
+    const [name, setName] = useState();
+
+    useEffect(() => {
+        console.log("hello " + name);
+    }, []);
+
+    return (...);
+}
+- After the first render only
+
+6. In the code snippet below when will React run the console.log statement?
+const Message = () => {
+    const [name, setName] = useState();
+
+    useEffect(() => {
+        console.log("hello " + name);
+    }, [name]);
+
+    return (...);
+}
+- After the first render and every time the name state updates

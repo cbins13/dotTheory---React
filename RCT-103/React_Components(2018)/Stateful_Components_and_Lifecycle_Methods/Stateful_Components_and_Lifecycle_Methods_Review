@@ -1,0 +1,17 @@
+1. In the render() method, where should you write any intermediary variables?
+- Outside the return statement;
+
+2. Complete the code to add the method that will clear the interval ID once the component gets removed from the DOM.
+- componentWillUnmount
+
+3. Which lifecycle method gets called by React as soon as a component is inserted into the DOM?
+- componentDidMount()
+
+4. Which lifecycle method is invoked just before a component instance is destroyed?
+- componentWillUnmount()
+
+5.  Complete the ternary expression to display the button text based on the value of the isLoggedIn state.
+- ?, :
+
+6. Which lifecycle method do you use to fetch data from an API?
+- componentDidMount()

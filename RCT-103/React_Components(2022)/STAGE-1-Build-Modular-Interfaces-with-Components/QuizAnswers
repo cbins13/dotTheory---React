@@ -1,0 +1,17 @@
+1. Complete the terminal command to create a React project called my-app using the Create React App tool.
+- npx, create-react-app
+
+2. Complete the code to bring in React as a dependency.
+- import , from 
+
+3. Which of the following best describes a React component?
+- A function or class that optionally accepts inputs and renders a part of your UI
+
+4. Complete the code to export an Application component.
+- export, default
+
+5. When don't we need to import React into a module?
+- When we have a stateless component that only contains JSX
+
+6. Use a relative path to import the Nav displayed in the footer.
+- Nav, ./Nav

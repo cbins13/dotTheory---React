@@ -1,0 +1,18 @@
+1. Can two or more components access and share the same state?
+- Yes. A parent component can pass state down to its children via props.
+
+2. Which of the following best describes unidirectional data flow?
+- React flows any data changes at the top down through the component tree updating each component.
+
+3. Pass the event handler addCalc down to the UserInput component
+-  {addCalc}
+
+4. Component State is state that’s local to a component and usually not shared or visible outside of the component
+- True
+
+5. When two or more components need access to the same state, we hoist the state into their common parent. This is called:
+- Lifting State
+
+6. React allows us to use props that are callback functions to communicate data upstream, from a child to a parent.
+- True. That's how a child component can access functions and change state defined in its parent component.
+
