@@ -1,0 +1,17 @@
+1. Destructure the props passed to Book and display their values in the JSX.
+- title, author, year ; title, author, year
+
+2. Which of the following are a reason react re-renders a component: (Select all that apply)
+-  The component's parent has updated, The component's props has updated, The component's state has updated
+
+3. Complete the code to create a ref that will access the <input> element.
+- useRef(), ref, userInput
+
+4. Write the property that will allow type checking on the props passed to the Book component.
+-  propTypes
+
+5. Complete the code to provide the Greeter component a default value for the greeting prop.
+-  defaultProps
+
+6. Which of the following can produce a performance boost in some cases?
+-  React.memo
