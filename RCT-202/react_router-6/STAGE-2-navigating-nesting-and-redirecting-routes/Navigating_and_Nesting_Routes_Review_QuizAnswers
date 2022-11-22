@@ -1,0 +1,19 @@
+1. Given this route: <Route path='/products' element={<Navigate to='/products/books' />} />
+
+Which of the following is true?
+- The route renders a redirect to '/products/books' when the URL path is '/products'.
+
+2. Which component lets you add styling to a link when it matches the current URL.
+- <NavLink>
+
+3. Which component can redirect from one route to another route?
+- <Navigate>
+
+4. The _____ prop assigns a custom CSS class to NavLink when it's active.
+- className
+
+5. The _____ route is a child route with no path prop that renders in their parent route's outlet at the parent route's path.
+- index
+
+6. Which React Router component allows users to navigate between routes?
+- <Link>
