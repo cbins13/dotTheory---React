@@ -1,0 +1,14 @@
+1. SPA stands for
+- Single Page Apps
+
+2. What is a single-page app (SPA)?
+- A web application that displays on a single web page. The HTML, JavaScript and CSS are loaded once by the browser and the content changes dynamically as users interact with the app.
+
+3. React includes built-in routing features.
+- False. React is a library concerned with just rendering your UI. You'll install additional libraries and add-ons for certain features; React Router is the official routing library.
+
+4. A good routing solution should keep track of browser history and seamlessly link users to specific sections of your app.
+- True. Users should navigate a single-page- app using the broswer's back and forward buttons, and a URL should always direct the user to the correct location.
+
+5. In web development, routing:
+- Matches a URL to the set of components being rendered

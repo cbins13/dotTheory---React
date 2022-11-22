@@ -1,0 +1,14 @@
+1. Given this route: <Route path="dogs/:breed" element={<Dogs />} /> How do you access the value of the :breed parameter in a component?
+- let {breed} = useParams();
+
+2. You can give a URL parameter any name, as long as you include a __ in front of it.
+- :
+
+3. Pass the data prop to the PhotoContainer component and set its value to the flower data
+- data={flower}
+
+4. The ____ Hook can be used to programmatically change the URL.
+- useNavigate
+
+5. Which renders the NotFound component when the URL does not match any of the routes?
+- <Route path="*" element={<NotFound />} />
