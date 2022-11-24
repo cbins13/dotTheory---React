@@ -2,8 +2,8 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/V16";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import About from "./components/V17";
-import Contact from "./components/V18";
+import V17 from "./components/V17";
+import V18 from "./components/V18";
 import Portal from "./components/Portal";
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/v17" element={<About />} />
-          <Route path="/v18" element={<Contact />} />
+          <Route path="/v17" element={<V17 />} />
+          <Route path="/v18" element={<V18/>} />
         </Routes>
       </main>
       <footer>

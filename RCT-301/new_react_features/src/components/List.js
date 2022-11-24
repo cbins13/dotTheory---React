@@ -8,7 +8,7 @@ const List = () => {
             <li key={4}>Better server-side rendering</li>,
             <li key={5}>Support for custom DOM attributes</li>,
             <li key={6}>Reduced file size</li>,
-            <li>And more</li>
+            <li>And more...</li>
         ]
     }
 
