@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import { Route } from 'react-router-dom';
 import Main from "./Components/Main";
+import Header from "./Components/Header";
 
 function App() {
   const [posts,setPosts] = useState([]);
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <Main posts={posts}/>
     </div>
   );

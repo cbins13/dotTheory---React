@@ -13,11 +13,11 @@ const Header = () => (
                 </li>
 
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/">Photos</Link>
                 </li>
 
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/">Users</Link>
                 </li>
             </ul>
         </nav>
