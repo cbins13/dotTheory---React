@@ -9,15 +9,15 @@ const Header = () => (
                 </li>
 
                 <li>
-                    <Link to="/">Posts</Link>
+                    <Link to="/posts">Posts</Link>
                 </li>
 
                 <li>
-                    <Link to="/">Photos</Link>
+                    <Link to="/photos">Photos</Link>
                 </li>
 
                 <li>
-                    <Link to="/">Users</Link>
+                    <Link to="/users">Users</Link>
                 </li>
             </ul>
         </nav>

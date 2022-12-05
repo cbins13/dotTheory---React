@@ -42,3 +42,36 @@ header > nav > ul > li > a{
   margin-inline: 2rem;
   padding: 1rem;
 }
+
+.homeContainer{
+  text-align: center;
+}
+
+.underlined{
+  text-decoration: underline;
+  color: #00b4d8;
+  font-weight: bold;
+}
+
+.postsContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.post, .user{
+  background-color: #caf0f8;
+  margin-block: 1rem;
+  border: 2px solid #fff;
+  border-radius: 2.5%;
+  text-align: center;
+}
+
+.photosContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo{
+  text-align: center;
+  margin-inline: 1rem;
+}
