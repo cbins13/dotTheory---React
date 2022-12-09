@@ -1,0 +1,17 @@
+1. A function loses access to the scope it was defined in when it executes in a different scope.
+- False. Functions retain access to the scope in which they were defined. This is known as a closure.
+
+2. What is one way to copy all of an object's properties into a new object literal?
+- By using the object spread(...) operator
+
+3. What React library ensures the props passed into a component is the type your program expects?
+- prop-types
+
+4. To get data from a child component to a parent, no configuration is necessary.
+- False
+
+5. When a user clicks a connected form element in a React app...
+- The state is set first, then the element changes to tshow the new state.
+
+6. What property does React use to help identify which items have changed, are added, or are removed?
+- key

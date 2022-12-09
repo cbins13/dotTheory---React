@@ -1,0 +1,17 @@
+1. create-react-app provides default styling for the main App component in `src/App.css`.
+- True
+
+2. What's the best way to share state between components in a react app?
+- Shared state should be stored in both components' nearest shared ancestor.
+
+3. What's the best way to store two pieces of state that depend on each other in react?
+- Store only one of them and compute the other from the first as needed.
+
+4. When working with static assets from a designer, it can be helpful to copy the files into your app's `src` folder.
+- True
+
+5. What is one difference between JSX and HTML?
+- JSX uses 'className' to specify an element's class, while HTML uses 'class'.
+
+6. The data an app uses to change what it displays and how it displays it is called:
+- state
