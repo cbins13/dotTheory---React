@@ -1,0 +1,14 @@
+1. To pass data to a child component from its parent, where does that data need to go?
+- On the child's props
+
+2. How can props.data be accessed from within the Widget component?
+- props.children
+
+3. To allow a child component to change its parent's state in response to user events, where does the event handler need to be defined?
+- On the parent
+
+4. In React, you can render or remove an element depending on the existence of a piece of data in the state.
+- True
+
+5. What is a common use for the reduce() method?
+- Deriving a value other than an array from elements within an array.

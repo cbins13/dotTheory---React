@@ -1,95 +1,103 @@
 import React, { useState } from "react";
 import "./App.css";
-import GuestList from "./Components/GuestList";
+import Header from "./Components/Header/Header";
+import MainContent from "./Components/MainContent/MainContent";
 
 function App() {
   const [guests, setGuests] = useState([
     {
       name: "Treasure",
       isConfirmed: false,
-      isEditing: false
+      isEditing: false,
     },
     {
       name: "Nic",
       isConfirmed: true,
-      isEditing: false
+      isEditing: false,
     },
     {
       name: "Matt K",
       isConfirmed: true,
-      isEditing: true
-    }
+      isEditing: false,
+    },
   ]);
+
+  const [isFiltered, setIsFiltered] = useState(false);
+
+  const [pendingGuest, setPendingGuest] = useState("");
 
   const toggleGuestPropertyAt = (property, indexToChange) => {
     setGuests(
-      guests.map((guest,index)=>{
-        if(index===indexToChange){
-          return(
-            {
-              ...guest,
-              [property]: !guest[property]
-            }
-          )
+      guests.map((guest, index) => {
+        if (index === indexToChange) {
+          return {
+            ...guest,
+            [property]: !guest[property],
+          };
         }
         return guest;
       })
-    )
-  }
+    );
+  };
+
+  const setNameAt = (name, indexToChange) => {
+    setGuests(
+      guests.map((guest, index) => {
+        if (index === indexToChange) {
+          return {
+            ...guest,
+            name,
+          };
+        }
+        return guest;
+      })
+    );
+  };
 
   const toggleConfirmationAt = (index) => {
     toggleGuestPropertyAt("isConfirmed", index);
-  }
+  };
+
+  const removeGuestAt = (index) =>
+    setGuests([...guests.slice(0, index), ...guests.slice(index + 1)]);
 
   const toggleEditingAt = (index) => {
     toggleGuestPropertyAt("isEditing", index);
-  }
+  };
 
-  const getTotalInvited = () => (
-    guests.length
-  );
-    //getAttendingGuests = () => 
-    //getUnconfirmedGuests = () =>
+  const toggleFilter = () => setIsFiltered(!isFiltered);
+
+  const handleNameInput = (e) => {
+    return setPendingGuest(e.target.value);
+  };
+
+  const newGuestSubmitHandler = (e) => {
+    e.preventDefault();
+    setGuests([
+      {
+        name: pendingGuest,
+        isConfirmed: false,
+        isEditing: false,
+      },
+      ...guests,
+    ]);
+    setPendingGuest("");
+  };
+
+  const getTotalInvited = () => guests.length;
+  const getAttendingGuests = () =>
+    guests.reduce((total, guest) => (guest.isConfirmed ? total + 1 : total), 0);
 
   return (
     <div className="App">
-      <header>
-        <h1>RSVP</h1>
-        <p>A Treehouse App</p>
-        <form>
-          <input type="text" value="Safia" placeholder="Invite Someone" />
-          <button type="submit" name="submit" value="submit">
-            Submit
-          </button>
-        </form>
-      </header>
-      <div className="main">
-        <div>
-          <h2>Invitees</h2>
-          <label>
-            <input type="checkbox" /> Hide those who haven't responded
-          </label>
-        </div>
-        <table className="counter">
-          <tbody>
-            <tr>
-              <td>Attending:</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>Unconfirmed:</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Total:</td>
-              <td>3</td>
-            </tr>
-          </tbody>
-        </table>
-        <GuestList guests={guests} toggleConfirmationAt={toggleConfirmationAt}
-          toggleEditingAt={toggleEditingAt}
-        />
-      </div>
+      <Header newGuestSubmitHandler={newGuestSubmitHandler} handleNameInput={handleNameInput} pendingGuest={pendingGuest}/>
+      <MainContent totalInvited={getTotalInvited()} numberAttending={getAttendingGuests()} numberUnconfirmed={getTotalInvited() - getAttendingGuests()} guests={guests}
+      toggleConfirmationAt={toggleConfirmationAt}
+      toggleEditingAt={toggleEditingAt}
+      setNameAt={setNameAt}
+      isFiltered={isFiltered}
+      removeGuestAt={removeGuestAt}
+      pendingGuest={pendingGuest} toggleFilter={toggleFilter}/>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+1. What is refactoring code?
+- Rewriting code to be clearner, but not changing how it functions.
+
+2. How did we fix the "filter bug"?
+- By creating ID's for each guest that were independently generatedd from the array index.
+
+3. Breaking apps into components allows us to organize and simplify an app's structure.
+- True
+
+4. If you `import` or `require` from a directory rather than a file, what file inside that directory will JavaScript look for by default?
+- index.js
+
+5. Why was the app not able to target the correct component when the filter was engaged?
+- Because rendering fewer elements potentially assigned different indexes than the corresponding guests in the app state.
+

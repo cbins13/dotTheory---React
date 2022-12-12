@@ -1,0 +1,15 @@
+1. If the variable isFiltered is false, what would the following expression evaluate to?
+!isFiltered && 'showAll'
+- the string 'isFiltered'
+
+2. A callback that is bound to an event on a DOM element receives what object when that event occurs?
+- an event object containing information about the event
+
+3. If value is a variable, what does !value evaluate to?
+- It evaluates to true when value is false.
+
+4. When a user clicks the "edit" button, how is our app finding the corresponding array element in the state?
+- The handler has been given the array element's index through a closure.
+
+5. What is one way to create a copy of an array while removing some of its elements?
+- The filter() method on JavaScript arrays.
