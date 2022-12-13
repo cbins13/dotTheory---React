@@ -1,0 +1,14 @@
+1 User ____ provides a way to identify users.
+- authentication
+
+2. Which of the following best describes Basic Authentication?
+- An authentication scheme which transmits credentials as user-id / password pairs, encoded using Base64
+
+3. When a client application makes a request to a "protected" route, the client needs to include the user's key and secret as part of the HTTP request that's sent to the server. The format of the user's key and secret is dictated by the REST API’s authentication scheme.
+- True
+
+4. When the client wants to authenticate itself with a server, it can do so by including a(n) _________ request header with the user credentials.
+- Authorization
+
+5. What mechanism instructs the browser to let a web application running at one domain have permission to access resources from a server at a different domain?
+- Cross-Origin Resource Sharing (CORS)
