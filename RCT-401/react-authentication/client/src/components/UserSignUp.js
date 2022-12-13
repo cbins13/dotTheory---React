@@ -78,9 +78,9 @@ export default class UserSignUp extends Component {
     const user = {name, username, password};
 
     context.data.createUser(user)
-    .then(err => {
-      if(err.length){
-        this.setState({err});
+    .then(error => {
+      if(error.length){
+        this.setState({error});
       } else {
         console.log(`${username} is successfully signed up and authenticated!`)
       }

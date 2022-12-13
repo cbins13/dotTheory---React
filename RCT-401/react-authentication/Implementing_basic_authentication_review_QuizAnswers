@@ -1,0 +1,14 @@
+1. What request header contains the credentials to authenticate a client with a server, after the server responds with a 401 Unauthorized status?
+- Authorization
+
+2. What does is mean when a request returns a response with a 401 Unauthorized HTTP status code?
+- The status indicates to the client that the request failed because it lacked valid authentication credentials.
+
+3. The Basic Authentication scheme is built into React.
+- False. The Basic Authentication scheme is part of the overall authentication framework provided by HTTP.
+
+4. Which of the following best demonstrates what credentials sent to the server might look like using Basic authentication:
+- Authorization: Basic am91QHNtaXRoLmNvbTpqb2U=
+
+5. What method is used for encoding a string in base-64 format?
+- btoa()

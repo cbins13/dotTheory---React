@@ -9,9 +9,18 @@ export class Provider extends Component {
     this.data = new Data();
   }
 
+  state = {
+    authenticatedUser: null
+  }
+
   render() {
+    const {authenticatedUser} = this.state;
     const value = {
-      data: this.data
+      authenticatedUser,
+      data: this.data,
+      actions: { 
+        signIn: this.signIn
+      }
     }
     
     return (
@@ -22,8 +31,16 @@ export class Provider extends Component {
   }
 
   
-  signIn = async () => {
-
+  signIn = async (username, password) => {
+    const user = await this.data.getUser(username, password);
+    if(user !==null){
+      this.setState(()=>{
+        return{
+          authenticatedUser: user,
+        }
+      })
+    }
+    return user;
   }
 
   signOut = () => {
